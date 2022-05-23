@@ -13,7 +13,7 @@ const Banner = () => {
             repairs. Regular auto maintenance can prevent unexpected breakdowns
             and accidents when you're far away from an auto shop.
           </p>
-          <button class="btn btn-black text-white">Get Car Parts</button>
+          <button class="btn btn-yellow text-white">Get Car Parts</button>
         </div>
       </div>
     </div>
