@@ -6,7 +6,7 @@ import reviews from '../../assets/icons/reviews.png';
 
 const Summery = () => {
     return (
-        <div>
+        <div className='mb-12'>
             <h2 className='text-4xl font-bold text-center uppercase mb-6'>Business Summery</h2>
             <h3 className='text-center  text-3xl uppercase my-2'>Thousands of customers trust us</h3>
             <p className='text-center text-xl  uppercase mb-4'>Try to understand users expectations</p>
