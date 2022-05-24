@@ -8,6 +8,7 @@ const PartsDetails = () => {
     return (
         <div>
             <h3>parts details {cardetailId}</h3>
+           
         </div>
     );
 };

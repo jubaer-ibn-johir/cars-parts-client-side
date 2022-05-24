@@ -11,22 +11,22 @@ const CarPart = ({ carPart }) => {
     }
 
   return (
-    <div class="card w-96  shadow-xl">
-      <figure class="px-10 pt-10">
+    <div className="card w-96  shadow-xl">
+      <figure className="px-10 pt-10">
         <img
           src={img}
           alt="tools"
-          class="rounded-xl"
+          className="rounded-xl"
         />
       </figure>
-      <div class="card-body items-center text-center">
-        <h2 class="card-title">{name}</h2>
+      <div className="card-body items-center text-center">
+        <h2 className="card-title">{name}</h2>
         <p>Price:(Per Piece) {price}</p>
         <p>{description}</p>
         <p>Available Quantity: {availableQuantity} Pieces</p>
         <p>Minimum Order: {minimumQuantity} Pieces</p>
-        <div class="card-actions">
-          <button onClick={()=> navigateToPartsDetails(_id, name, img, description, availableQuantity, minimumQuantity, price)} class="btn btn-black">Purchase</button>
+        <div className="card-actions">
+          <button onClick={()=> navigateToPartsDetails(_id, name, img, description, availableQuantity, minimumQuantity, price)} className="btn btn-black">Purchase</button>
         </div>
       </div>
     </div>
