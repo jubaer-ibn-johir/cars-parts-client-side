@@ -1,0 +1,30 @@
+[
+    {
+        "_id": 1,
+        "name": "Car Tires",
+        "availableQuantity": "3000",
+        "minimumQuantity": "50",
+        "price": "$120",
+        "description": "A practical tire for confident all-season traction in wet, dry, and snowy conditions, with long tread-wear.",
+        "img": "https://i.ibb.co/KXzzR1z/tire1.png"
+    },
+    {
+        "_id": 2,
+        "name": "Rear Bumper",
+        "availableQuantity": "3500",
+        "minimumQuantity": "100",
+        "price": "$85",
+        "description": "We have all your replacement rear bumper needs including plastic covers, chrome steel step bumpers, and more, for late model drivers to updated.",
+        "img": "https://i.ibb.co/rpg8pbr/bumper-1.png"
+    },
+    {
+        "_id": 3,
+        "name": "Fog Lights",
+        "availableQuantity": "4500",
+        "minimumQuantity": "100",
+        "price": "$50",
+        "description": "These off-road lights can be used underwater, can light up the entire forward view, and are made of shatterproof lenses.",
+        "img": "https://i.ibb.co/BPVTnhn/lights.png"
+    }
+    
+]

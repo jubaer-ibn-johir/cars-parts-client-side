@@ -5,6 +5,8 @@ import { Routes, Route, Link } from "react-router-dom";
 import Home from './Pages/Home/Home';
 import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
 import Login from './Pages/Login/Login';
+import PartsDetails from './Pages/PartsDetails/PartsDetails';
+import NotFound from './Pages/Shared/NotFound';
 
 function App() {
   return (
@@ -13,6 +15,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+        <Route path="/cardetail/:cardetailId" element={<PartsDetails />} />
+
         <Route path="portfolio" element={<MyPortfolio />} />
         <Route path="login" element={<Login />} />
       </Routes>
