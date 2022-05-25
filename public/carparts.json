@@ -3,7 +3,7 @@
         "_id": 1,
         "name": "Car Tires",
         "availableQuantity": "3000",
-        "minimumQuantity": "50",
+        "minimumQuantity": "100",
         "price": "$120",
         "description": "A practical tire for confident all-season traction in wet, dry, and snowy conditions, with long tread-wear.",
         "img": "https://i.ibb.co/KXzzR1z/tire1.png"

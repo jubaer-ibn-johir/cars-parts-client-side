@@ -20,12 +20,12 @@ const Purchase = () => {
   return (
     <div className="text-center items-center justify-center flex mt-4 ">
       
-      <div class="card w-96 bg-base-100 shadow-xl">
-        <figure class="px-10 pt-10">
+      <div className="card w-96 bg-base-100 shadow-xl">
+        <figure className="px-10 pt-10">
           <img
             src={purchases.img}
             alt="Shoes"
-            class="rounded-xl"
+            className="rounded-xl"
           />
         </figure>
         <div className="card-body items-center text-center">
@@ -37,9 +37,7 @@ const Purchase = () => {
         <div className="card-actions">
           <button onClick={()=> orderButton(purchaseId)} className="btn btn-black">Order Now</button>
         </div>
-        <Link>
         
-        </Link>
       </div>
       </div>
     </div>
