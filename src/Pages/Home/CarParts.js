@@ -5,7 +5,7 @@ const CarParts = () => {
     const [carParts, setCarParts] = useState([]);
 
     useEffect(() => {
-        fetch('carparts.json')
+        fetch('http://localhost:5000/purchase')
         .then(res => res.json())
         .then(data => setCarParts(data))
     },[])

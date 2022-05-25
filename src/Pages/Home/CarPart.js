@@ -6,8 +6,8 @@ const CarPart = ({ carPart }) => {
     carPart;
 
     const navigate = useNavigate();
-    const navigateToPartsDetails = id => {
-        navigate(`/cardetail/${id}`);
+    const navigateToPurchase = id => {
+        navigate(`/purchase/${id}`);
     }
 
   return (
@@ -26,7 +26,7 @@ const CarPart = ({ carPart }) => {
         <p>Available Quantity: {availableQuantity} Pieces</p>
         <p>Minimum Order: {minimumQuantity} Pieces</p>
         <div className="card-actions">
-          <button onClick={()=> navigateToPartsDetails(_id, name, img, description, availableQuantity, minimumQuantity, price)} className="btn btn-black">Purchase</button>
+          <button onClick={()=> navigateToPurchase(_id, name, img, description, availableQuantity, minimumQuantity, price)} className="btn btn-black">Purchase</button>
         </div>
       </div>
     </div>
