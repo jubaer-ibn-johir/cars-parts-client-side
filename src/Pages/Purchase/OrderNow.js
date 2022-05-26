@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"; 
 import { useAuthState } from "react-firebase-hooks/auth";
-import { useForm } from "react-hook-form";
+import { set, useForm } from "react-hook-form";
 import auth from "../../firebase.init";
 import { toast } from 'react-toastify';
 
@@ -22,10 +22,12 @@ const OrderNow = () => {
     .then(res => res.json())
     .then(result => {
         console.log(data);
+      
         // if(data.success){
         //     toast(`Your order is completed`);
         // }
     })
+    
 
   };
   return (
