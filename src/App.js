@@ -17,6 +17,10 @@ import DashBoard from "./Pages/DashBoard/DashBoard";
 import MyProfile from "./Pages/DashBoard/MyProfile";
 import AddReviews from "./Pages/DashBoard/AddReviews";
 import MyOrders from "./Pages/DashBoard/MyOrders";
+import ManageAllOrders from "./Pages/DashBoard/ManageAllOrders";
+import AddProduct from "./Pages/DashBoard/AddProduct";
+import MakeAdmin from "./Pages/DashBoard/MakeAdmin";
+import ManageProduct from "./Pages/DashBoard/ManageProduct";
 
 function App() {
   return (
@@ -50,8 +54,13 @@ function App() {
             </RequireAuth>
           }>
             <Route index element={<MyProfile></MyProfile>}></Route>
-            <Route path="addreview" element={<AddReviews></AddReviews>}></Route>
-            <Route path="myOrder" element={<MyOrders></MyOrders>}></Route>
+            <Route path="/dashboard/addreview" element={<AddReviews></AddReviews>}></Route>
+            <Route path="/dashboard/myOrder" element={<MyOrders></MyOrders>}></Route>
+
+            <Route path="/dashboard/manageOrders" element={<ManageAllOrders></ManageAllOrders>}></Route>
+            <Route path="/dashboard/addProduct" element={<AddProduct></AddProduct>}></Route>
+            <Route path="/dashboard/makeAdmin" element={<MakeAdmin></MakeAdmin>}></Route>
+            <Route path="/dashboard/manageProduct" element={<ManageProduct></ManageProduct>}></Route>
           </Route>
 
         <Route path="/portfolio" element={<MyPortfolio />} />
