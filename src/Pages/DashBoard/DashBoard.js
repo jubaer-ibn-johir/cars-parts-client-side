@@ -28,14 +28,18 @@ const DashBoard = () => {
           
       }
       {
-         user && <li><Link to="/dashboard/addreview">Add a review</Link></li>   
+         user &&  <li><Link to="/dashboard/addreview">Add a review</Link></li>   
       }
-      {  <li><Link to="/dashboard/manageOrders">Manage All Orders</Link></li> }
-      <li><Link to="/dashboard/addProduct">Add a Product</Link></li> 
 
-      
-      { <li><Link to="/dashboard/makeAdmin">Make Admin</Link></li>}
-      { <li><Link to="/dashboard/manageProduct">Manage Products</Link></li>}
+      {
+        admin && <>
+      <li><Link to="/dashboard/manageOrders">Manage All Orders</Link></li> 
+       <li><Link to="/dashboard/addProduct">Add a Product</Link></li>
+       <li><Link to="/dashboard/makeAdmin">Make Admin</Link></li>
+       <li><Link to="/dashboard/manageProduct">Manage Products</Link></li>
+        
+        </> }
+       
 
     </ul>
   
