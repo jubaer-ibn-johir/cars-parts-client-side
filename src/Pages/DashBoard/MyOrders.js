@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
+import { Link } from "react-router-dom";
 import auth from "../../firebase.init";
 
 const MyOrders = () => {
@@ -8,7 +9,7 @@ const MyOrders = () => {
 
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/myOrder?email=${user.email}`
+      fetch(`https://sheltered-castle-28994.herokuapp.com/myOrder?email=${user.email}`
 
       )
         .then((res) => res.json())
@@ -19,8 +20,8 @@ const MyOrders = () => {
   return (
     <div>
       <h3 className="text-2xl mb-6">My Orders: {myOrders.length}</h3>
-      <div class="overflow-x-auto">
-        <table class="table w-full">
+      <div className="overflow-x-auto">
+        <table className="table w-full">
           <thead>
             <tr>
               <th></th>
@@ -29,6 +30,7 @@ const MyOrders = () => {
               <th>Address</th>
               <th>Phone Number</th>
               <th>Order Quantity</th>
+              <th>Payment</th>
             </tr>
           </thead>
           <tbody>
@@ -40,6 +42,7 @@ const MyOrders = () => {
                 <td>{myOrder.address}</td>
                 <td>{myOrder.phone}</td>
                 <td>{myOrder.quantity}P</td>
+                <td>{ <Link to={`/dashboard/payment/${myOrder._id}`}> <button className="btn btn-xm ">Pay</button></Link> }</td>
               </tr>
             ))}
           </tbody>

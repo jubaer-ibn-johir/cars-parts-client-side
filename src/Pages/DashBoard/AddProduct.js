@@ -5,12 +5,12 @@ import Loading from '../Shared/Loading';
 
 const AddProduct = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
-    // const {data: carParts, isLoading} = useQuery('purchase', () => fetch(`http://localhost:5000/purchase`).then(res => res.json()) )
+    // const {data: carParts, isLoading} = useQuery('purchase', () => fetch(`https://sheltered-castle-28994.herokuapp.com/purchase`).then(res => res.json()) )
 
     const imageStorageKey = '9715c8f2537948bb6c9f89a94de47be9';
 
       const onSubmit = async data => {
-        const image = data.image;
+        const image = data.image[0];
         const formData = new FormData();
         formData.append('image', image);
         const url = `https://api.imgbb.com/1/upload?key=${imageStorageKey}`;
@@ -32,7 +32,7 @@ const AddProduct = () => {
                     img: img
                 }
 
-                fetch(`http://localhost:5000/purchase`, {
+                fetch(`https://sheltered-castle-28994.herokuapp.com/purchase`, {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json',

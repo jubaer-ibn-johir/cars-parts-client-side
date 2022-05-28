@@ -6,7 +6,7 @@ const Purchase = () => {
   const [purchases, setPurchases] = useState({});
 
   useEffect(() => {
-    const url = `http://localhost:5000/purchase/${purchaseId}`;
+    const url = `https://sheltered-castle-28994.herokuapp.com/purchase/${purchaseId}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setPurchases(data));

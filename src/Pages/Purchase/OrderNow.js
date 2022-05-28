@@ -11,7 +11,7 @@ const OrderNow = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = data => {
     console.log(data);
-    const url = `http://localhost:5000/myOrder`;
+    const url = `https://sheltered-castle-28994.herokuapp.com/myOrder`;
     fetch(url, {
         method: 'POST',
         headers: {

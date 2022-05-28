@@ -4,7 +4,7 @@ import Loading from '../Shared/Loading';
 import UserAdminRow from './UserAdminRow';
 
 const MakeAdmin = () => {
-    const {data: users, isLoading, refetch} = useQuery('users', ()=> fetch('http://localhost:5000/user').then(res=> res.json()))
+    const {data: users, isLoading, refetch} = useQuery('users', ()=> fetch('https://sheltered-castle-28994.herokuapp.com/user').then(res=> res.json()))
     if(isLoading){
         return <Loading></Loading>
     }
@@ -13,8 +13,8 @@ const MakeAdmin = () => {
     return (
         <div>
             <h2>All Users : {users.length}</h2>
-            <div class="overflow-x-auto">
-  <table class="table w-full">
+            <div className="overflow-x-auto">
+  <table className="table w-full">
 
     <thead>
       <tr>

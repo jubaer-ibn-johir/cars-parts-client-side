@@ -14,8 +14,8 @@ const Blogs = () => {
       <br />
       <div className="grid grid-cols-1 lg:grid-cols-3 px-2 gap-2">
         <div className="flex rounded bg-gray-900 text-white p-3">
-          <div class="avatar">
-            <div class="w-16 rounded">
+          <div className="avatar">
+            <div className="w-16 rounded">
               <FaReact className="text-5xl mt-3" />
             </div>
           </div>
@@ -33,8 +33,8 @@ const Blogs = () => {
           </div>
         </div>
         <div className="flex rounded bg-gray-900 text-white p-3">
-          <div class="avatar">
-            <div class="w-16 rounded">
+          <div className="avatar">
+            <div className="w-16 rounded">
             <FaReact className="text-5xl mt-3" />
             </div>
           </div>
@@ -55,8 +55,8 @@ const Blogs = () => {
           </div>
         </div>
         <div className="flex rounded bg-gray-900 text-white p-3">
-          <div class="avatar">
-            <div class="w-16 rounded">
+          <div className="avatar">
+            <div className="w-16 rounded">
             <FaReact className="text-5xl mt-3" />
             </div>
           </div>
@@ -76,8 +76,8 @@ const Blogs = () => {
           </div>
         </div>
         <div className="flex rounded bg-gray-900 text-white p-3">
-          <div class="avatar">
-            <div class="w-16 rounded">
+          <div className="avatar">
+            <div className="w-16 rounded">
             <FaReact className="text-5xl mt-3" />
             </div>
           </div>
@@ -97,8 +97,8 @@ const Blogs = () => {
           </div>
         </div>
         <div className="flex rounded bg-gray-900 text-white p-3">
-          <div class="avatar">
-            <div class="w-16 rounded">
+          <div className="avatar">
+            <div className="w-16 rounded">
             <FaReact className="text-5xl mt-3" />
             </div>
           </div>
@@ -124,8 +124,8 @@ const Blogs = () => {
           </div>
         </div>
         <div className="flex rounded bg-gray-900 text-white p-3">
-          <div class="avatar">
-            <div class="w-16 rounded">
+          <div className="avatar">
+            <div className="w-16 rounded">
             <FaReact className="text-5xl mt-3" />
             </div>
           </div>
