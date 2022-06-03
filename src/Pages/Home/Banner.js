@@ -3,9 +3,9 @@ import parts from "../../assets/images/car-parts.jpg";
 
 const Banner = () => {
   return (
-    <div className="hero min-h-screen ">
+    <div className="my-12 hero min-h-screen  ">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <img src={parts} className="max-w-lg rounded-lg shadow-2xl" />
+        <img src={parts} className="max-w-sm rounded-lg shadow-2xl" />
         <div>
           <h1 className="text-5xl font-bold">Your Car Is Waiting for New Parts!</h1>
           <p className="py-6">
@@ -21,3 +21,5 @@ const Banner = () => {
 };
 
 export default Banner;
+
+

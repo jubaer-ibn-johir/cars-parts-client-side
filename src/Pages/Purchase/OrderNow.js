@@ -46,7 +46,7 @@ const OrderNow = () => {
                 <p className="mt-2">Your Number:</p>
                 <input placeholder="phone" className="border border-gray-800 rounded "  {...register("phone")} />
                 <p className="mt-2">Order  Quantity:</p>
-                <input placeholder="How Many Pieces?" className="border border-gray-800 rounded"  {...register("quantity")} />
+                <input placeholder="How Many Pieces?" type="number" className="border border-gray-800 rounded"  {...register("quantity", {min:50, max: 3000})} />
                 <br/>
                 <input className="border border-gray-800 rounded text-white mt-4 uppercase py-2 px-4 bg-slate-800" value="Order" type="submit" />
             </form>
